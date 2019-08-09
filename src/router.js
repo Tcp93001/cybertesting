@@ -1,15 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import MainView from './components/MainView.vue'
+import MainView from './components/MainView/MainView.vue'
+import ReportView from './components/ReportView/ReportView.vue'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
       name: 'mainview',
       component: MainView
+    },
+    {
+      path: '/reporte',
+      name: 'reportview',
+      component: ReportView
     },
     {
       path: '/about',

@@ -98,6 +98,15 @@ export default {
     },
 
     savingsWithSystem () {
+      this.finalResult = {
+        totalTime: this.totalTime,
+        savingOnTime: (this.totalTime - this.onlySystem).toFixed(1)
+      }
+
+      // Este objeto puede ser enviado como un objeto JSON a través de algún método HTTP
+      const sendJSON = JSON.stringify(this.finalResult)
+      // 
+
       return (this.totalTime - this.onlySystem).toFixed(1)
     },
 

@@ -6,9 +6,33 @@
       app
     >
       <v-toolbar-title class="headline text-uppercase">
-        <span class="font-weight-light">Comparativa de costos</span>
+        <span class="font-weight-light">Tickets Sistema vs. Otras fuentes</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
+      <v-btn
+        text
+        dark
+        active-class="purple"
+        href="/"
+        link
+      >
+        Tiempo
+      </v-btn>
+
+      <v-spacer></v-spacer>
+
+      <v-btn
+        text
+        dark
+        active-class="purple"
+        href="/reporte"
+        link
+      >
+        Costo
+      </v-btn>
+
+      <v-spacer></v-spacer>
+
       <v-img
         src="../src/assets/logo_global_final_cert_fondo_azul.png"
         height="40"
