@@ -31,18 +31,16 @@
         text-center
         xs-12
       >
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+        {{ new Date().getFullYear() }} — <strong>CyberSec</strong>
       </v-flex>
     </v-footer>
   </v-app>
 </template>
 
 <script>
-import MainView from './components/MainView.vue'
 export default {
   name: 'App',
   components: {
-    MainView
   },
   data: () => ({
     //
