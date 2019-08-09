@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-layout mb-5 row>
-      <div class="display-1">Reporte de Actividad por Tiempo</div>
+      <div class="pa-2 display-1">Reporte de Actividad por Tiempo</div>
     </v-layout>
 
     <v-divider ma-5></v-divider>
@@ -21,17 +21,17 @@
         ></apexchart>
       </v-flex>
 
-      <v-flex xs6>
+      <v-flex xs12 md6>
         <v-layout column pa-2>
-          <v-flex xs6 text-center mb-5>
+          <v-flex xs12 text-center mb-5>
             <div class="title text-uppercase font-weight-bold">Capture la cantidad de tickets</div>
           </v-flex>
           <v-layout align-baseline>
-            <v-flex xs7>
+            <v-flex xs6>
               <div class="subtitle-1 text-right">Levantados en Llamada</div>
             </v-flex>
 
-            <v-flex pl-2 offset-xs1 xs3>
+            <v-flex pl-2 offset-xs1 xs6>
               <v-text-field
                 name="t-phone"
                 label="Por teléfono"
@@ -45,11 +45,11 @@
           </v-layout>
 
           <v-layout align-baseline >
-            <v-flex xs7>
+            <v-flex xs6>
               <div class="subtitle-1 text-right">Levantados por correo</div>
             </v-flex>
 
-            <v-flex pl-2 offset-xs1 xs3>
+            <v-flex pl-2 offset-xs1 xs6>
               <v-text-field
                 name="t-mail"
                 label="Por correo"
@@ -63,11 +63,11 @@
           </v-layout>
 
           <v-layout align-baseline >
-            <v-flex xs7>
+            <v-flex xs6>
               <div class="subtitle-1 text-right ">Levantados por Sistema</div>
             </v-flex>
 
-            <v-flex pl-2 offset-xs1 xs3>
+            <v-flex pl-2 offset-xs1 xs6>
               <v-text-field
                 name="t-system"
                 label="Por sistema"
@@ -81,7 +81,7 @@
           </v-layout>
 
           <v-layout ma-5 justify-end>
-            <v-flex xs6>
+            <v-flex xs12>
               <v-btn
                 dark
                 width="100%"
@@ -99,7 +99,7 @@
     <v-divider ma-4></v-divider>
 
     <v-layout row mt-4 px-1>
-      <v-flex xs6 sm2 px-2>
+      <v-flex xs6 sm2 pa-2>
         <v-card
           color="light-blue lighten-4"
           height="100"
@@ -119,7 +119,7 @@
         </v-card>
       </v-flex>
 
-      <v-flex xs6 sm2 px-2>
+      <v-flex xs6 sm2 pa-2>
         <v-card
           color="green lighten-4"
           height="100"
@@ -139,7 +139,7 @@
         </v-card>
       </v-flex>
 
-      <v-flex xs6 sm2 px-2>
+      <v-flex xs6 sm2 pa-2>
         <v-card
           height="100"
         >
@@ -158,7 +158,7 @@
         </v-card>
       </v-flex>
 
-      <v-flex xs6 sm2 px-2>
+      <v-flex xs6 sm2 pa-2>
         <v-card color="grey lighten-4"
           height="100"
         >
@@ -177,7 +177,7 @@
         </v-card>
       </v-flex>
 
-      <v-flex xs6 sm2 px-2>
+      <v-flex xs6 sm2 pa-2>
         <v-card color="purple lighten-4"
           height="100"
         >
@@ -196,7 +196,7 @@
         </v-card>
       </v-flex>
 
-      <v-flex xs6 sm2 px-2>
+      <v-flex xs6 sm2 pa-2>
         <v-card color="orange lighten-4"
           height="100"
         >
