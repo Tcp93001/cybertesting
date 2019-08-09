@@ -11,12 +11,38 @@ export default {
         id: 'vuechart-example'
       },
       xaxis: {
-        categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
-      }
+        categories: ['Tickets y Tiempo']
+      },
+
     },
-    series: [{
-      name: 'series-1',
-      data: [30, 40, 45, 50, 49, 60, 70, 91]
-    }]
-  })
+    series: [
+      {
+        name: 'Teléfono',
+        data: [0, 0, 0]
+      },
+      {
+        name: 'Correo',
+        data: [0, 0, 0]
+      },
+      {
+        name: 'Sistema',
+        data: [0, 0, 0]
+      }
+    ],
+    phone: 0,
+    mail: 0,
+    system: 0
+  }),
+  computed: {
+    dataValueSystem: {
+      get () {
+        return this.system
+      },
+      set (value) {
+        this.system = value
+        this.series[2].data[0] = value
+        console.log(this.system)
+      }
+    }
+  }
 }
