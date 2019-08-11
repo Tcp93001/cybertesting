@@ -28,9 +28,8 @@ export default {
       plotOptions: {
         bar: {
           dataLabels: {
-            position: 'top',
             style: {
-              colors: ['red', 'red', 'red']
+              colors: ['red']
             }
           }
         }
@@ -105,8 +104,8 @@ export default {
       }
 
       // Este objeto puede ser enviado como un objeto JSON a través de algún método HTTP
-      const sendJSON = JSON.stringify(this.finalResult)
-      // 
+      // const sendJSON = JSON.stringify(this.finalResult)
+      //
 
       return (this.totalTime - this.onlySystem).toFixed(1)
     },
